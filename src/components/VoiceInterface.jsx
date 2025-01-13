@@ -27,7 +27,7 @@ const VoiceInterface = () => {
         </button>
       </div>
       <p><strong>Comando Reconocido:</strong> {transcript || 'Ninguno'}</p>
-      <button onClick={() => speak('Bienvenido al lector de billetes.')} style={buttonStyle}>
+      <button onClick={() => speak('Joshua bobo.')} style={buttonStyle}>
         Iniciar Narrador
       </button>
     </div>
