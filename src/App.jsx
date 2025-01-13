@@ -3,6 +3,7 @@ import Header from "./components/Header";
 import Camera from "./components/Camera";
 import ActionButtons from "./components/ActionButtons";
 import VoiceInterface from "./components/VoiceInterface"; 
+import InstallButton from "./components/InstallButton";
 import "./App.css";
 
 const App = () => {
@@ -17,6 +18,7 @@ const App = () => {
             </section>
             <section className="buttons-section">
                 <ActionButtons />
+                <InstallButton />
             </section>
             <div>
                     <VoiceInterface />
