@@ -1,22 +1,20 @@
 import React from "react";
 import "./ActionButtons.css";
+import cameraButtonIcon from "/src/assets/camera_button.svg";
+import changeButtonIcon from "/src/assets/change_button.svg";
 
-const ActionButtons = () => {
+const ActionButtons = ({ onRedClick }) => {
     const handleGreenClick = () => {
         console.log("Botón verde presionado");
-    };
-
-    const handleRedClick = () => {
-        console.log("Botón rojo presionado");
     };
 
     return (
         <div className="action-buttons-container">
             <button className="action-button green-button" onClick={handleGreenClick}>
-                <img src="/src/assets/change_button.svg" alt="Vuelto" />
+                <img src={changeButtonIcon} alt="Vuelto" />
             </button>
-            <button className="action-button red-button" onClick={handleRedClick}>
-                <img src="/src/assets/info_button.svg" alt="Comandos" />
+            <button className="action-button camera-button" onClick={onRedClick}>
+                <img src={cameraButtonIcon} alt="Tomar foto" />
             </button>
         </div>
     );
